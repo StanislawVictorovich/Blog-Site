@@ -1,0 +1,222 @@
+body {
+    width: 100%;
+    height: 100%;
+    background: #4CCEB2; 
+    background: -webkit-radial-gradient(#4CCEB2, #2F8FD8); 
+    background: -o-radial-gradient(#4CCEB2, #2F8FD8); 
+    background: -moz-radial-gradient(#4CCEB2, #2F8FD8); 
+    background: radial-gradient(#4CCEB2, #2F8FD8); 
+}
+
+/***** Navigation elements *****/
+.Navigation {
+    background-color: #949494;
+    color: #fff;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border-left: 5px solid #33ADFF;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow:0 0 40px rgba(0,0,0,0.8);
+    transition: 0.5s;
+}
+
+.Navigation:hover {
+    background-color: #666;
+    border-left: 5px solid #3333FF;
+    transform: scale(1.1);
+}
+
+.Navigation:active {
+    top: .1em;
+    left: .1em;
+    box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+}
+
+.NavigationClicked {
+    box-shadow: 0 0 0 60px rgba(49, 91, 206, 0.05) inset;
+    color: aqua;
+    transform: scale(.9);
+}
+
+.HeaderBlockMain {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.HeaderBlockChild {
+    margin: auto, auto, auto, auto;
+}
+
+.Content {
+    animation: fade-in 0.8s ease;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+}
+
+#Contacts {
+    width: 100%;
+}
+
+article {
+    float: right;
+    border: 2px solid #ccc;
+	background: radial-gradient(circle farthest-side at 30px 20px, #fff, rgb(140, 223, 205), rgba(80, 80, 241, 0.993));
+	width: 40%;
+	padding: 10px;
+	margin: 10px;
+    font-size: 20px;
+    flex-grow: 1;
+    box-shadow:0 0 40px rgba(0,0,0,0.8);
+}
+
+.AuthorBlogContainer {
+    display: flex;
+    align-items: center;
+    font-size: 0.8em;
+}
+
+img {
+    float: left;
+    margin: 10px;
+    width: 50%;
+}
+
+.Avatar {
+    width: 50px;
+    height: 50px;
+}
+
+.NickName, .Tags {
+    font-weight: bold;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.CommentBox {
+    font-size: 0.8em;
+    text-align: left;
+}
+
+.CRUDBox {
+    text-align: right;
+}
+.CRUDElement {
+    font-size: 0.7em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: right;
+    font-weight: bold;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+main {
+    width: 100%;
+    display: inline-flex;
+}
+
+small {
+    text-shadow: 2px 3px 4px black;
+}
+
+.Vidgets {
+    margin: 20px;
+    float: right;
+
+}
+
+/***** form registration fields *****/
+label {
+    display: block;
+    margin-right: auto;
+    color: indigo;  
+    text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
+                   10px 20px 5px rgba(0,0,0,0.05),
+                   -10px 20px 5px rgba(0,0,0,0.05);
+    color: indigo;
+    transition: all 1s;
+    font-size: 1em;
+}
+label.required:before{
+    color: red;
+    content: " *";
+}
+
+input, select {
+    display: block;
+    border: 2px solid skyblue;
+    margin-left: auto;
+    border-radius: 3px; 
+    background: #ffffff !important; 
+    outline: none; 
+    height: 24px; 
+    width: 50%; 
+    color: #cccccc;
+    margin-bottom: 10px;
+    transition: 0.8s;
+}
+input:focus, select:focus {
+    color: #000000;
+    border: 2px solid tomato;
+    box-shadow:0 0 20px tomato;
+    transition: 0.8s;
+}
+input:hover, select:hover {
+    border: 2px solid skyblue;
+    box-shadow:0 0 40px darkblue;
+    transition: 0.8s;
+}
+  
+.invalid {
+    border: 2px solid red;
+}
+
+/***** buttons *****/
+.Button {
+    font-weight: 1em;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: .4em 1em calc(.4em + 3px);
+    border-radius: 3px;
+    background: rgb(84, 86, 214);
+    box-shadow: 0 -3px rgb(52, 82, 163) inset;
+    transition: 0.8s;
+    margin-top: 1em;
+    cursor: pointer;
+} 
+.Button:hover { background: rgb(168, 169, 226); }
+.Button:active {
+    background: rgb(145, 146, 199);
+    box-shadow: 0 3px rgba(135, 137, 214, 0.959) inset;
+    transform: scale(.9);
+}
+
+@media (max-width: 600px) {
+    #MainContentContainer {
+        flex-direction: column;
+    }
+    article {
+        width: 100%;
+        font-size: 14px;
+    }
+    main {
+        display: block;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
