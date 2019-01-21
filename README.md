@@ -1,4 +1,4 @@
-<div align="center">
+<div align="center"> 
   <a href="https://github.com/StanislawVictorovich/Blog-Site">
     <img width="150" height="150" src="https://www.quickanddirtytips.com/sites/default/files/images/1125/BlogIcon.jpg">
   </a>
