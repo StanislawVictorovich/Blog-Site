@@ -4,7 +4,7 @@
   </a>
 </div>
 
-# Gulp + ES6 + Blog Site Web Application
+# Blog Site Web Application (ES6 + Gulp)
 
 # Getting started
 
